@@ -16,3 +16,10 @@ Thumbs.db
 
 # 本地审计记录（保留在本地，若要归档请显式提交）
 audit/
+
+# 密卷：只提交密文（internal/*.enc），明文一律不入库。
+# 白名单式写法——internal/ 下除了说明文件与 .enc，其余全挡在外面，
+# 万一将来加了别的东西，默认也是"不入库"，不会意外泄露。
+internal/*
+!internal/README.md
+!internal/*.enc

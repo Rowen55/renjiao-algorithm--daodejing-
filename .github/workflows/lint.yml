@@ -30,6 +30,9 @@ jobs:
       - name: 检查相对链接
         run: python scripts/check_links.py
 
+      - name: 密卷防泄漏（明文不得入库）
+        run: python scripts/nrcrypt.py check
+
       - uses: actions/setup-node@v4
         with:
           node-version: "20"

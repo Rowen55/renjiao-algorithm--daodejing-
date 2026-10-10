@@ -10,6 +10,10 @@
 *.cff  text eol=lf
 LICENSE text eol=lf
 
+# 密卷密文是二进制。上面那条 `* text=auto eol=lf` 若把它当文本做换行转换，
+# 密文会被改坏且无法解密，故显式取消一切转换（`binary` = `-text -diff`）。
+*.enc binary
+
 # 语言统计：本仓库不是代码仓库。
 # 正文是文言经体（.md / .txt，语言类型为 prose），GitHub 本就不计入统计。
 # 唯二会被判成代码的是下面两处附属件，它们不该占据侧栏的「Languages」一栏：

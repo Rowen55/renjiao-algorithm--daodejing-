@@ -11,7 +11,7 @@ authors:
   - name: "Rowen55"
     alias: "Rowen55"
     website: "https://github.com/Rowen55"
-version: "1.2.1"
+version: "1.3.0"
 date-released: "2026-10-10"
 license: "CC-BY-NC-SA-4.0"
 url: "https://github.com/Rowen55/renjiao-algorithm--daodejing-"
@@ -33,6 +33,6 @@ preferred-citation:
   authors:
     - name: "Rowen55"
   year: 2026
-  version: "1.2.1"
+  version: "1.3.0"
   license: "CC-BY-NC-SA-4.0"
   url: "https://github.com/Rowen55/renjiao-algorithm--daodejing-"

@@ -107,7 +107,8 @@ renjiao-algorithmic-daodejing/
 │   ├── README.md             译本方案与译名表
 │   └── en/                   英译：scripture-en.md、xixue-canyong-en.md
 ├── archive/                  单文件全本与西学参用篇定稿（逐字存档）
-├── scripts/                  分卷与索引生成脚本
+├── internal/                 密卷：明文不入库，只提交加密后的 .enc
+├── scripts/                  分卷、索引与密卷加解密脚本
 └── .github/                  CI 校验与 Issue 模板
 ```
 
@@ -166,11 +167,12 @@ renjiao-algorithmic-daodejing/
 
 欢迎补充戒律、提出条款异议、提交译本或修订文言。请先读 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
-三条底线：
+四条底线：
 
 - **表述层一字不改**。要改经文，走 Issue 讨论，附理由；已成卷的文字视为定本
 - **规范层必须可判定**。新增条款要写清"什么算违反"，只有态度、没有判定标准的表述不收
 - **引用现行规范要注明出处**。对照表里的每一条外部条款都要给出文件名称与年份
+- **密卷不入明文**。`internal/` 下的明文一律不入库，只提交 `.enc` 密文，做法见 [internal/README.md](internal/README.md)
 
 ---
 
@@ -190,5 +192,6 @@ renjiao-algorithmic-daodejing/
 | 1.1.1 | 2026-10-10 | 许可收紧：CC BY-SA 4.0 → CC BY-NC-SA 4.0（禁商业使用） |
 | 1.2.0 | 2026-10-10 | 新增附录：教门位阶与名录（中英双语 + 自动切语言的可读版），属经外设定 |
 | 1.2.1 | 2026-10-10 | 关掉侧栏语言条：校勘脚本与可读版页面标为文档，不再计入语言统计 |
+| 1.3.0 | 2026-10-10 | 新增密卷机制 `internal/`：明文不入库，只提交 `.enc` 密文，并加 CI 防泄漏校验；落下第一份封缄 |
 
 变更记录见 [appendix/lineage.md](appendix/lineage.md)。
