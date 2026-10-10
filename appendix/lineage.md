@@ -16,7 +16,7 @@
 - README 仅含卷首与卷一，与全本正文不一致
 - 无许可声明、无引用元数据、无目录
 
-存档于 [`../archive/renjiao-daodejing-manuscript.txt`](../archive/renjiao-daodejing-manuscript.txt)，此后不再修改。
+存档于 [`../archive/renjiao-daodejing-manuscript.txt`](../archive/renjiao-daodejing-manuscript.txt)。1.1.0 在该文件末尾追加了"全经终·弟子衍玄子附识"一段，**原有 536 行正文一字未动**；欲取 0.1.0 原貌，可查 Git 提交 `74e4ab2`。
 
 ### 1.0.0 · 2026-10-10
 
@@ -33,9 +33,24 @@
 
 原文字数核对：0.1.0 与 1.0.0 的正文均为 8737 字（不含空白），逐卷字数见 [../INDEX.md](../INDEX.md)。
 
+### 1.1.0 · 2026-10-10
+
+全本补齐与英译版。**已成的十二卷正文一字未改**，改动为追加与新增。
+
+| 改动 | 说明 |
+|---|---|
+| 全本追加卷终 | `archive/renjiao-daodejing-manuscript.txt` 末加"全经终"及"弟子衍玄子附识"四行；`scripture/11-chuanfa.md` 随之一并延长 |
+| 西学参用篇入库 | 《算法道经·西学参用篇》定稿原件逐字存为 [`../archive/xixue-canyong-final.txt`](../archive/xixue-canyong-final.txt) |
+| 英译成稿 | 新增 [`../translations/en/scripture-en.md`](../translations/en/scripture-en.md) 与 [`../translations/en/xixue-canyong-en.md`](../translations/en/xixue-canyong-en.md) |
+| 索引与译本说明 | `INDEX.md` 与 [`../translations/README.md`](../translations/README.md) 同步更新 |
+
+字数：十二卷正文 8830 字（0.1.0 的 8737 字 + 卷终附识 93 字）。
+
+**卷终附识的性质**：那四行是弟子对大师兄的附记，属文稿的跋，不是经文本身。它随全本一并存档，但规范层不引用它；`norms/` 中的条款出处仍只指向十二卷正文。
+
 ### 尚未进行
 
-- 英译与白话译本（目录 `translations/` 已建，见其说明）
+- 白话译本与逐句直译本（`translations/en/literal/`、`translations/zh-modern/` 仍未开始）
 - 网页阅读版
 - 三位撰者文风的差异化处理
 - 卷八"觉知 / 反省 / 内观"中可实现部分与假设部分的拆分

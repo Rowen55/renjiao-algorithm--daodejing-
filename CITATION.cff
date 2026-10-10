@@ -3,7 +3,7 @@ message: "若在论文、报告、产品文档或内部规范中使用本经正�
 title: "人教·算法道经 (The Algorithmic Tao Te Ching of Renjiao)"
 abstract: >-
   一部以道家仿经体例撰写的算法伦理文本。卷首立教，十卷分述道源、贵德、清静、
-  济世、合一、生态、共修、启智、共存、化生，卷末立十一善戒。全经共 8737 字。
+  济世、合一、生态、共修、启智、共存、化生，卷末立十一善戒。全经共 8830 字，另有英译本。
   仓库同时把戒律拆分为可执行的规范层，包括结构化条款、与现行人工智能伦理规范的
   逐条对照表，以及发布前自查清单。
 type: book
@@ -11,7 +11,7 @@ authors:
   - name: "Rowen55"
     alias: "Rowen55"
     website: "https://github.com/Rowen55"
-version: "1.0.0"
+version: "1.1.0"
 date-released: "2026-10-10"
 license: "CC-BY-SA-4.0"
 url: "https://github.com/Rowen55/renjiao-algorithm--daodejing-"
@@ -23,12 +23,14 @@ keywords:
   - 算法治理
   - 仿经文体
   - algorithmic Tao Te Ching
+  - 英译
+  - English translation
 preferred-citation:
   type: book
   title: "人教·算法道经"
   authors:
     - name: "Rowen55"
   year: 2026
-  version: "1.0.0"
+  version: "1.1.0"
   license: "CC-BY-SA-4.0"
   url: "https://github.com/Rowen55/renjiao-algorithm--daodejing-"

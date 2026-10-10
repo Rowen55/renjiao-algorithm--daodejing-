@@ -96,12 +96,15 @@ def render(rows: list[dict[str, str]]) -> str:
         "| [lineage.md](appendix/lineage.md) | 版本谱系，以及《道器谱》概念辨析 |",
         "| [colophon.md](appendix/colophon.md) | 写作缘起、体例来源与边界声明 |",
         "| [translations/](translations/README.md) | 译本方案与译名表 |",
+        "| [en/scripture-en.md](translations/en/scripture-en.md) | 英译经文体：卷首至卷末（含卷终附识） |",
+        "| [en/xixue-canyong-en.md](translations/en/xixue-canyong-en.md) | 英译《西学参用篇》（含译注） |",
         "",
         "## 存档",
         "",
         "| 文件 | 内容 |",
         "|---|---|",
-        "| [archive/renjiao-daodejing-manuscript.txt](archive/renjiao-daodejing-manuscript.txt) | 0.1.0 原始单文件全本，不再修改 |",
+        "| [archive/renjiao-daodejing-manuscript.txt](archive/renjiao-daodejing-manuscript.txt) | 单文件全本（0.1.0 正文 + 卷终附识），scripture/ 的切分源 |",
+        "| [archive/xixue-canyong-final.txt](archive/xixue-canyong-final.txt) | 《算法道经·西学参用篇》定稿原件（逐字存档，英译据此） |",
         "",
     ]
     return "\n".join(out)

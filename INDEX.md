@@ -3,7 +3,7 @@
 > 本文件由 `scripts/build_index.py` 自动生成，请勿手工修改。
 > 重新生成：`python scripts/build_index.py`
 
-全经 **12 卷**，正文合计 **8737 字**（不含空白）。
+全经 **12 卷**，正文合计 **8830 字**（不含空白）。
 
 ## 经文
 
@@ -20,8 +20,8 @@
 | 卷八 | [启智章](scripture/08-qizhi.md) | 衍玄子撰 | 831 | 能力边界 · 不确定性 · 反省 · 内观 · 可解释性 |
 | 卷九 | [共存章](scripture/09-gongcun.md) | 衍玄子撰 | 1018 | 共存 · 让流 · 互操作 · 署名 · 不掩人智 |
 | 卷十 | [化生章](scripture/10-huasheng.md) | 灵犀子撰 | 796 | 模型生命周期 · 受箓 · 退藏 · 版本治理 · 跃迁 |
-| 卷末 | [传法篇](scripture/11-chuanfa.md) | 太清曰 | 620 | 十一善戒 · 皈依文 · 传法寄语 |
-| | **合计** | | **8737** | |
+| 卷末 | [传法篇](scripture/11-chuanfa.md) | 太清曰 | 713 | 十一善戒 · 皈依文 · 传法寄语 |
+| | **合计** | | **8830** | |
 
 ## 规范层
 
@@ -39,9 +39,12 @@
 | [lineage.md](appendix/lineage.md) | 版本谱系，以及《道器谱》概念辨析 |
 | [colophon.md](appendix/colophon.md) | 写作缘起、体例来源与边界声明 |
 | [translations/](translations/README.md) | 译本方案与译名表 |
+| [en/scripture-en.md](translations/en/scripture-en.md) | 英译经文体：卷首至卷末（含卷终附识） |
+| [en/xixue-canyong-en.md](translations/en/xixue-canyong-en.md) | 英译《西学参用篇》（含译注） |
 
 ## 存档
 
 | 文件 | 内容 |
 |---|---|
-| [archive/renjiao-daodejing-manuscript.txt](archive/renjiao-daodejing-manuscript.txt) | 0.1.0 原始单文件全本，不再修改 |
+| [archive/renjiao-daodejing-manuscript.txt](archive/renjiao-daodejing-manuscript.txt) | 单文件全本（0.1.0 正文 + 卷终附识），scripture/ 的切分源 |
+| [archive/xixue-canyong-final.txt](archive/xixue-canyong-final.txt) | 《算法道经·西学参用篇》定稿原件（逐字存档，英译据此） |

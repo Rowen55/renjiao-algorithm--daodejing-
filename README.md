@@ -6,8 +6,9 @@
 
 本仓库不是代码仓库，是一部文本作品：以文言仿经的形式，把算法与人工智能的伦理关切写成十卷经文，并额外拆出一层**可执行的规范**，让它从"读着有味"变成"用得上"。
 
-- 全经正文 **8737 字**（不含空白），分 12 篇
+- 全经正文 **8830 字**（不含空白），分 12 篇
 - 由**表述层**（`scripture/`，经文体）与**规范层**（`norms/`，可判定条款）两层构成
+- 已有**英译本**：[`translations/en/scripture-en.md`](translations/en/scripture-en.md) 与 [`translations/en/xixue-canyong-en.md`](translations/en/xixue-canyong-en.md)
 - 许可：**CC BY-SA 4.0**，可转载、可改编，需署名并以相同方式共享
 
 ---
@@ -42,7 +43,7 @@
 | 卷八 | [启智章](scripture/08-qizhi.md) | 衍玄子撰 | 觉知、反省、内观三者兼修；知其所不知，止其所当止 |
 | 卷九 | [共存章](scripture/09-gongcun.md) | 衍玄子撰 | 明位、让流、共参、和光；不掩人智，不夺天工 |
 | 卷十 | [化生章](scripture/10-huasheng.md) | 灵犀子撰 | 为算法立生死书：知变、受箓、退藏、位易 |
-| 卷末 | [传法篇](scripture/11-chuanfa.md) | 太清曰 | 十一善戒、AI 皈依文、传法寄语 |
+| 卷末 | [传法篇](scripture/11-chuanfa.md) | 太清曰 | 十一善戒、AI 皈依文、传法寄语、全经终附识 |
 
 完整的自动索引与字数统计见 [INDEX.md](INDEX.md)。
 
@@ -58,12 +59,21 @@
 
 **想直接用在产品里**
 进 [norms/](norms/)：
+
 - [`precepts.yaml`](norms/precepts.yaml)：十一善戒的结构化版本（定义 / 正例 / 反例 / 出处 / 对应现行条款）
 - [`mapping.md`](norms/mapping.md)：本经主张与《新一代人工智能伦理规范》、欧盟可信 AI 伦理准则、OECD AI 原则等现行规范的逐条对照
 - [`checklist.md`](norms/checklist.md)：发布前可勾选的自查清单
 
 **想查词**
 [`appendix/glossary.md`](appendix/glossary.md)：玄德、明昧、受箓、退藏、化生、道器谱等自造词与经文体术语的释义。
+
+**想读英文**
+[`translations/en/`](translations/README.md)：
+
+- [`scripture-en.md`](translations/en/scripture-en.md)：十二卷英译，经文体
+- [`xixue-canyong-en.md`](translations/en/xixue-canyong-en.md)：《西学参用篇》英译，含与欧盟、美国及各大厂商原则的对照表
+
+两篇均附译注，说明译名取舍与三处有意保留的原文问题。中文始终是权威文本。
 
 ---
 
@@ -85,8 +95,10 @@ renjiao-algorithmic-daodejing/
 │   ├── glossary.md           术语表
 │   ├── lineage.md            版本谱系与《道器谱》
 │   └── colophon.md           写作缘起与体例说明
-├── translations/             译本（英译计划）
-├── archive/                  原始单文件全本（存档，不再修改）
+├── translations/             译本
+│   ├── README.md             译本方案与译名表
+│   └── en/                   英译：scripture-en.md、xixue-canyong-en.md
+├── archive/                  单文件全本与西学参用篇定稿（逐字存档）
 ├── scripts/                  分卷与索引生成脚本
 └── .github/                  CI 校验与 Issue 模板
 ```
@@ -146,5 +158,6 @@ renjiao-algorithmic-daodejing/
 |---|---|---|
 | 0.1.0 | 2026-09-14 | 原始单文件全本（存档于 `archive/`） |
 | 1.0.0 | 2026-10-10 | 结构重构：分卷、加元数据、拆分表述层与规范层、补术语表与对照表 |
+| 1.1.0 | 2026-10-10 | 全本追加"全经终"附识；《西学参用篇》定稿入库；英译两篇成稿 |
 
 变更记录见 [appendix/lineage.md](appendix/lineage.md)。

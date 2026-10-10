@@ -1,0 +1,6 @@
+{
+  // GitHub Issue 表单（.github/ISSUE_TEMPLATE/*.md）以 YAML 前置块开头且没有结束
+  // 分隔线，markdownlint 会把整份文件当成正文来检查，产生误报。这些文件由 GitHub
+  // 自行校验，不参与 Markdown 格式检查。
+  "ignores": [".github/**", "node_modules/**"]
+}
