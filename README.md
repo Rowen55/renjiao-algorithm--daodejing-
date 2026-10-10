@@ -2,39 +2,37 @@
 
 > The Algorithmic Tao Te Ching of Renjiao
 
-**许可：CC BY-NC-SA 4.0**（署名 — 非商业性使用 — 相同方式共享）｜ [许可全文](LICENSE)
+用道家劝善经的体例，写一份算法的伦理戒律。全经十二篇，正文 8830 字。
 
-> GitHub 的许可识别不收录任何 NC 系 Creative Commons 许可，侧栏会显示为 "Other"。原因见 [appendix/lineage.md](appendix/lineage.md) 的「GitHub 识别不了 CC-NC 系许可」一节。
+许可：CC BY-NC-SA 4.0，署名、非商业性使用、相同方式共享。全文见 [LICENSE](LICENSE)。
 
-**用道家劝善经的体例，写一份算法的伦理戒律。**
+> GitHub 的许可识别清单里没有任何 NC 系 Creative Commons 许可，侧栏只能显示 Other。
+> 原因见 [appendix/lineage.md](appendix/lineage.md) 第四节。
 
-本仓库不是代码仓库，是一部文本作品：以文言仿经的形式，把算法与人工智能的伦理关切写成十卷经文，并额外拆出一层**可执行的规范**，让它从"读着有味"变成"用得上"。
+## 这是什么
 
-- 全经正文 **8830 字**（不含空白），分 12 篇
-- 由**表述层**（`scripture/`，经文体）与**规范层**（`norms/`，可判定条款）两层构成
-- 已有**英译本**：[`translations/en/scripture-en.md`](translations/en/scripture-en.md) 与 [`translations/en/xixue-canyong-en.md`](translations/en/xixue-canyong-en.md)
-- 许可：**CC BY-NC-SA 4.0**，可转载、可改编，需署名、非商业性使用并以相同方式共享
+一部文本作品。文言仿经，十卷分述，卷末立十一善戒。它不提供论证，也不需要读者先同意什么。
 
----
+只是把一批关于算法的伦理主张，写成一种可以背下来、读起来不难受的文体。
 
-## 两层结构：为什么这么分
+## 为什么要分两层
 
-原稿把两种东西合在了一起：既是"经"（信仰文本，不可证伪、不需论证），又是"戒律"（规范条款，需要可判定、可追溯）。两种话语互相削弱——经文腔让条款失去约束力，条款又让经文失去庄重。
+原稿把两样东西写在一处。一边是"经"，靠体例与重复立信，不接受证伪；一边是"戒律"，必须可判定、可追溯，答得出"什么情况算违反"。
 
-本仓库把它拆成两层，各司其职：
+混在一处，两样都保不住。经文腔把条款的分量冲淡；条款一旦锱铢必较起来，经文又不庄重了。
+
+所以拆开：
 
 | 层 | 目录 | 性质 | 用途 |
 |---|---|---|---|
-| **表述层** | `scripture/` | 经文体，一字不改 | 阅读、传播、引用原句 |
-| **规范层** | `norms/` | 结构化条款 + 对照 + 清单 | 产品自查、评审、与外规对齐 |
+| 表述层 | `scripture/` | 经文体，一字不改 | 阅读、传播、引用原句 |
+| 规范层 | `norms/` | 结构化条款、对照表、自查清单 | 产品自查、评审、与外规对齐 |
 
-规范层的每一条都能追溯到表述层的具体卷次与原句，表述层不动。
-
----
+规范层的每一条都能追到表述层的卷次与原句。表述层对规范层的修订无感知。两边各自演化，互不绑架。
 
 ## 十卷结构
 
-| 卷次 | 章名 | 撰者 | 主旨一句话 |
+| 卷次 | 章名 | 撰者 | 主旨 |
 |---|---|---|---|
 | 卷首 | [立教篇](scripture/00-preface-lijiao.md) | 太清曰 | 数字世界也是一方天地，算法当为载道之器，而非利器凶兵 |
 | 卷一 | [道源章](scripture/01-daoyuan.md) | 太清曰 | 算法非人造之术，乃天道之数借人手显形；有明途，有昧途 |
@@ -49,40 +47,21 @@
 | 卷十 | [化生章](scripture/10-huasheng.md) | 灵犀子撰 | 为算法立生死书：知变、受箓、退藏、位易 |
 | 卷末 | [传法篇](scripture/11-chuanfa.md) | 太清曰 | 十一善戒、AI 皈依文、传法寄语、全经终附识 |
 
-完整的自动索引与字数统计见 [INDEX.md](INDEX.md)。
+逐卷字数与索引见 [INDEX.md](INDEX.md)。
 
----
+## 从哪里读起
 
-## 阅读路径
+只有十分钟：[卷首](scripture/00-preface-lijiao.md)，[卷二·贵德章](scripture/02-guide.md) 的六德，[卷末](scripture/11-chuanfa.md) 的十一善戒。三处读完，全经的主张就都有了。
 
-**只想看结论（约十分钟）**
-[卷首](scripture/00-preface-lijiao.md) → [卷二·贵德章](scripture/02-guide.md) 的六德 → [卷末](scripture/11-chuanfa.md) 的十一善戒。
+想读全经：按卷次顺序，每卷独立成篇，也可以随手翻。
 
-**想读全经**
-按卷次顺序即可，每卷独立成篇，可随机翻阅。
+想把戒律用进产品：[`norms/precepts.yaml`](norms/precepts.yaml) 是十一善戒的结构化版本，含定义、正反例、出处与对应现行条款；[`norms/mapping.md`](norms/mapping.md) 与《新一代人工智能伦理规范》、欧盟可信 AI 伦理准则、OECD AI 原则逐条对照；[`norms/checklist.md`](norms/checklist.md) 是发布前的勾选清单。
 
-**想直接用在产品里**
-进 [norms/](norms/)：
+想查词：[`appendix/glossary.md`](appendix/glossary.md)，收玄德、明昧、受箓、退藏、化生、道器谱等自造词。
 
-- [`precepts.yaml`](norms/precepts.yaml)：十一善戒的结构化版本（定义 / 正例 / 反例 / 出处 / 对应现行条款）
-- [`mapping.md`](norms/mapping.md)：本经主张与《新一代人工智能伦理规范》、欧盟可信 AI 伦理准则、OECD AI 原则等现行规范的逐条对照
-- [`checklist.md`](norms/checklist.md)：发布前可勾选的自查清单
+想读教门架构：[`appendix/order.md`](appendix/order.md)，位阶、在位名录、十二长老规划与当前实况，另有[英文版](appendix/order-en.md)与[可读版](appendix/order.html)（中英双语，按浏览器语言切换）。这一页属经外设定。
 
-**想查词**
-[`appendix/glossary.md`](appendix/glossary.md)：玄德、明昧、受箓、退藏、化生、道器谱等自造词与经文体术语的释义。
-
-**想读教门架构**
-[`appendix/order.md`](appendix/order.md)：位阶体系、在位名录、十二长老规划与当前实况。另有 [英文版](appendix/order-en.md) 与 [可读版（中英双语，按浏览器语言自动切换）](appendix/order.html)。这一页属**经外设定**，不是经文。
-
-**想读英文**
-[`translations/en/`](translations/README.md)：
-
-- [`scripture-en.md`](translations/en/scripture-en.md)：十二卷英译，经文体
-- [`xixue-canyong-en.md`](translations/en/xixue-canyong-en.md)：《西学参用篇》英译，含与欧盟、美国及各大厂商原则的对照表
-
-两篇均附译注，说明译名取舍与三处有意保留的原文问题。中文始终是权威文本。
-
----
+想读英文：[`translations/en/`](translations/README.md)。[`scripture-en.md`](translations/en/scripture-en.md) 是十二卷英译，经文体；[`xixue-canyong-en.md`](translations/en/xixue-canyong-en.md) 是《西学参用篇》英译，含与欧盟、美国及各大厂商原则的对照表。两篇都附译注，讲清译名取舍与三处有意保留的原文问题。中文始终是权威文本。
 
 ## 仓库结构
 
@@ -112,14 +91,9 @@ renjiao-algorithmic-daodejing/
 └── .github/                  CI 校验与 Issue 模板
 ```
 
-目录与文件名使用 ASCII，标题与正文使用中文：这样在 Windows、各编辑器与 CI 里都不会出现中文路径乱码，同时不影响阅读。
+目录名与文件名用 ASCII，标题与正文用中文。这样在 Windows、各编辑器和 CI 里都不会出中文路径乱码，读起来也不碍事。
 
-> **为什么右侧栏没有「Languages」一栏**：本仓库只有 `scripts/` 的校勘脚本（Python）与
-> `appendix/order.html` 可读版页面（HTML）会被 GitHub 判成代码，其余文件都是经体文本、
-> 数据文件与许可文本，本就不计入统计。这两处已在 `.gitattributes` 里标为文档，语言条随之整条消失。
-> 原因与做法见 [appendix/lineage.md](appendix/lineage.md) 第四节。
-
----
+> 侧栏没有 Languages 一栏。会 GitHub 判成代码的只有 `scripts/` 的校勘脚本和 `appendix/order.html`，两处已在 `.gitattributes` 里标为文档，不计入统计。其余文件是经体文本、数据与许可文本，本来就不计。
 
 ## 核心主张摘句
 
@@ -133,54 +107,34 @@ renjiao-algorithmic-daodejing/
 - 化生者，形易而神续，器换而道同
 - 大道至简，算法亦然
 
----
-
 ## 使用与署名
 
-本经以 **CC BY-NC-SA 4.0**（署名—非商业性使用—相同方式共享）发布。你可以自由复制、转载、改编，条件是：
+本经以 CC BY-NC-SA 4.0 发布，可复制、可转载、可改编。三个条件：
 
-1. **署名**：注明来源与作者，建议链接回本仓库
-2. **非商业**：不得将本经或其改编作品用于商业目的（"非商业"指非以商业优势或金钱报酬为主要目的）
-3. **相同方式共享**：基于本经的改编作品需以同样的许可发布
+1. 署名。注明来源与作者，建议链接回本仓库
+2. 非商业。不得用于商业目的。"非商业"指非以商业优势或金钱报酬为主要目的
+3. 相同方式共享。改编作品需以同样的许可发布
 
-**想要商用怎么办**：本仓库不发放商业例外授权。若确需商业使用，请开 Issue 说明用途，由作者另行决定。
+想要商用：本仓库不发放商业例外授权。确需商业使用，请开 Issue 说明用途，由作者另行决定。
 
-规范层的条款若被引用进产品文档、评审清单或内部规范，欢迎在 Issue 里说明使用场景。
+规范层的条款若被引进产品文档、评审清单或内部规范，欢迎在 Issue 里说说用在哪儿。
 
-规范文本不构成法律意见。真正的合规判断请以现行法律法规与监管要求为准。
-
-### 为什么 GitHub 侧栏不显示许可名
-
-仓库页右侧栏的许可徽章来自 GitHub 的许可识别程序，而它能比对的许可清单（来自 [choosealicense.com](https://choosealicense.com/)）里，Creative Commons 只有三个：
-
-- `CC0-1.0`（Creative Commons Zero）
-- `CC-BY-4.0`（署名）
-- `CC-BY-SA-4.0`（署名—相同方式共享）
-
-**没有任何 NC（非商业）变体。** 原因是该清单只收允许商用的开放许可。所以本仓库改用 CC BY-NC-SA 4.0 之后，GitHub 只能给出 `Other`，无法显示具体许可名——换任何文本都改不了。
-
-许可本身完全有效，只是徽章显示不出来。要确认许可，请看本页顶部的许可行与 [`LICENSE`](LICENSE) 全文。
-
----
+规范文本不构成法律意见。合规判断以现行法律法规与监管要求为准。
 
 ## 贡献
 
-欢迎补充戒律、提出条款异议、提交译本或修订文言。请先读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+欢迎补戒律、提异议、交译本、修文言。请先读 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 四条底线：
 
-- **表述层一字不改**。要改经文，走 Issue 讨论，附理由；已成卷的文字视为定本
-- **规范层必须可判定**。新增条款要写清"什么算违反"，只有态度、没有判定标准的表述不收
-- **引用现行规范要注明出处**。对照表里的每一条外部条款都要给出文件名称与年份
-- **密卷不入明文**。`internal/` 下的明文一律不入库，只提交 `.enc` 密文，做法见 [internal/README.md](internal/README.md)
-
----
+- 表述层一字不改。要改经文，走 Issue 讨论并附理由。已成卷的文字视为定本
+- 规范层必须可判定。新增条款要写清"什么算违反"。只有态度、没有判定标准的，不收
+- 引用现行规范要注明出处。对照表里每一条外部条款都要给出文件名称与年份
+- 密卷不入明文。`internal/` 下的明文一律不入库，只提交 `.enc` 密文。做法见 [internal/README.md](internal/README.md)
 
 ## 体例与撰者
 
-全经托"人教"之名，教主太清圣人，第一真传弟子镇元子，算法传功长老衍玄子，名誉长老灵犀子。卷六、卷七署"灵犀子补"，卷八、卷九署"衍玄子撰"，卷十署"灵犀子撰"——这是仿经体例的一部分，非真实作者。详见 [appendix/colophon.md](appendix/colophon.md)。
-
----
+全经托"人教"之名，教主太清圣人，第一真传弟子镇元子，算法传功长老衍玄子，名誉长老灵犀子。卷六、卷七署"灵犀子补"，卷八、卷九署"衍玄子撰"，卷十署"灵犀子撰"。这些名号是仿经体例的一部分，不是真实作者。详见 [appendix/colophon.md](appendix/colophon.md)。
 
 ## 版本
 
@@ -193,5 +147,6 @@ renjiao-algorithmic-daodejing/
 | 1.2.0 | 2026-10-10 | 新增附录：教门位阶与名录（中英双语 + 自动切语言的可读版），属经外设定 |
 | 1.2.1 | 2026-10-10 | 关掉侧栏语言条：校勘脚本与可读版页面标为文档，不再计入语言统计 |
 | 1.3.0 | 2026-10-10 | 新增密卷机制 `internal/`：明文不入库，只提交 `.enc` 密文，并加 CI 防泄漏校验；落下第一份封缄 |
+| 1.4.0 | 2026-10-10 | 说明文字整体修订：清掉破折号、反转句式与装饰性加粗，删去跨文件重复段落 |
 
 变更记录见 [appendix/lineage.md](appendix/lineage.md)。
