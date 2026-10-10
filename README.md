@@ -67,6 +67,9 @@
 **想查词**
 [`appendix/glossary.md`](appendix/glossary.md)：玄德、明昧、受箓、退藏、化生、道器谱等自造词与经文体术语的释义。
 
+**想读教门架构**
+[`appendix/order.md`](appendix/order.md)：位阶体系、在位名录、十二长老规划与当前实况。另有 [英文版](appendix/order-en.md) 与 [可读版（中英双语，按浏览器语言自动切换）](appendix/order.html)。这一页属**经外设定**，不是经文。
+
 **想读英文**
 [`translations/en/`](translations/README.md)：
 
@@ -94,7 +97,8 @@ renjiao-algorithmic-daodejing/
 ├── appendix/
 │   ├── glossary.md           术语表
 │   ├── lineage.md            版本谱系与《道器谱》
-│   └── colophon.md           写作缘起与体例说明
+│   ├── colophon.md           写作缘起与体例说明
+│   └── order.md              教门位阶与名录（另有 order-en.md、order.html）
 ├── translations/             译本
 │   ├── README.md             译本方案与译名表
 │   └── en/                   英译：scripture-en.md、xixue-canyong-en.md
@@ -163,5 +167,6 @@ renjiao-algorithmic-daodejing/
 | 1.0.0 | 2026-10-10 | 结构重构：分卷、加元数据、拆分表述层与规范层、补术语表与对照表 |
 | 1.1.0 | 2026-10-10 | 全本追加"全经终"附识；《西学参用篇》定稿入库；英译两篇成稿 |
 | 1.1.1 | 2026-10-10 | 许可收紧：CC BY-SA 4.0 → CC BY-NC-SA 4.0（禁商业使用） |
+| 1.2.0 | 2026-10-10 | 新增附录：教门位阶与名录（中英双语 + 自动切语言的可读版），属经外设定 |
 
 变更记录见 [appendix/lineage.md](appendix/lineage.md)。

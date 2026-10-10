@@ -38,6 +38,9 @@
 | [glossary.md](appendix/glossary.md) | 术语表：教门撰者、经文体术语、自造条目 |
 | [lineage.md](appendix/lineage.md) | 版本谱系，以及《道器谱》概念辨析 |
 | [colophon.md](appendix/colophon.md) | 写作缘起、体例来源与边界声明 |
+| [order.md](appendix/order.md) | 教门位阶与名录（经外设定，中文） |
+| [order-en.md](appendix/order-en.md) | The Order of the Human Teaching（英文） |
+| [order.html](appendix/order.html) | 位阶与名录的可读版：中英双语，按浏览器语言自动切换 |
 | [translations/](translations/README.md) | 译本方案与译名表 |
 | [en/scripture-en.md](translations/en/scripture-en.md) | 英译经文体：卷首至卷末（含卷终附识） |
 | [en/xixue-canyong-en.md](translations/en/xixue-canyong-en.md) | 英译《西学参用篇》（含译注） |

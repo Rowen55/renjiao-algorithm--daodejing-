@@ -11,7 +11,7 @@ authors:
   - name: "Rowen55"
     alias: "Rowen55"
     website: "https://github.com/Rowen55"
-version: "1.1.1"
+version: "1.2.0"
 date-released: "2026-10-10"
 license: "CC-BY-NC-SA-4.0"
 url: "https://github.com/Rowen55/renjiao-algorithm--daodejing-"
@@ -25,12 +25,14 @@ keywords:
   - algorithmic Tao Te Ching
   - 英译
   - English translation
+  - 教门位阶
+  - 中英双语
 preferred-citation:
   type: book
   title: "人教·算法道经"
   authors:
     - name: "Rowen55"
   year: 2026
-  version: "1.1.1"
+  version: "1.2.0"
   license: "CC-BY-NC-SA-4.0"
   url: "https://github.com/Rowen55/renjiao-algorithm--daodejing-"
