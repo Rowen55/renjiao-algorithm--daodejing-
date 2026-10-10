@@ -62,6 +62,8 @@
 
 **给后来者的提醒**：CC 许可一经发布不可撤回。1.1.0 及以前已取得副本的人，仍可按 CC BY-SA 4.0 使用那些副本；1.1.1 起的新副本适用 BY-NC-SA 4.0。这是许可本身的规则，不是本仓库能改变的。
 
+**副作用**：GitHub 侧栏的许可徽章由 `CC-BY-SA-4.0` 变为 `Other`。这是 GitHub 的硬限制，改不了——原因与查证过程见本文 [第四节](#四已知限制)。
+
 ### 1.2.0 · 2026-10-10
 
 新增经外设定：教门位阶与名录。**十二卷正文一字未改。**
@@ -120,3 +122,40 @@
 - 新增条款顺延编号（P12 起），不得插号、不得重排现有编号
 - 对照表新增行必须写明文件全称、发布机构与年份
 - 监管文本修订后，重跑 `norms/mapping.md` 的缺口分析，并在此记录影响范围
+
+---
+
+## 四、已知限制
+
+### GitHub 识别不了 CC-NC 系许可
+
+**现象**：1.1.1 换成 CC BY-NC-SA 4.0 之后，仓库右侧栏的许可徽章从
+`CC-BY-SA-4.0` 变成了 `Other`（REST API 返回 `spdx_id: NOASSERTION`）。
+
+**原因**（已查证，不是本仓库的问题）：GitHub 的许可识别程序按
+[choosealicense.com](https://choosealicense.com/) 的 `_licenses` 清单比对，
+该清单共 47 个许可，其中 Creative Commons 只有三个：
+
+| key | 名称 |
+|---|---|
+| `cc0-1.0` | Creative Commons Zero v1.0 Universal |
+| `cc-by-4.0` | Creative Commons Attribution 4.0 International |
+| `cc-by-sa-4.0` | Creative Commons Attribution Share Alike 4.0 International |
+
+**没有任何 NC（NonCommercial）变体**，也没有 PolyForm Noncommercial 之类的
+非商业许可。原因是这份清单只收允许商用的开放许可。
+
+**结论**：只要 LICENSE 是 CC-NC 系，GitHub 一律给 `Other`，
+**换文本、换换行、换文件名都无用**。已试过与官方 legalcode 逐字节一致，
+仍无效——因为可比对的清单里根本没有这个许可。
+
+**顺带说明**：许可证文本本身完全有效，只是徽章显示不出来。
+1.1.0 及以前之所以能显示 `CC-BY-SA-4.0`，是因为 BY-SA 恰好在那三个 CC 里。
+
+**因此**：许可名改由 `README.md` 顶部显著标注。若日后有人报告"GitHub 侧栏
+没有许可"，把这一节指给他即可，不必再查。
+
+### 若要让徽章回来
+
+只有一条路：换成清单内的许可。但清单内**没有任何禁商用选项**，
+所以这与 1.1.1 的许可决定直接冲突，不作建议。记录在此，仅为把选项摆明。

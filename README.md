@@ -2,6 +2,10 @@
 
 > The Algorithmic Tao Te Ching of Renjiao
 
+**许可：CC BY-NC-SA 4.0**（署名 — 非商业性使用 — 相同方式共享）｜ [许可全文](LICENSE)
+
+> GitHub 的许可识别不收录任何 NC 系 Creative Commons 许可，侧栏会显示为 "Other"。原因见 [appendix/lineage.md](appendix/lineage.md) 的「GitHub 识别不了 CC-NC 系许可」一节。
+
 **用道家劝善经的体例，写一份算法的伦理戒律。**
 
 本仓库不是代码仓库，是一部文本作品：以文言仿经的形式，把算法与人工智能的伦理关切写成十卷经文，并额外拆出一层**可执行的规范**，让它从"读着有味"变成"用得上"。
@@ -138,6 +142,18 @@ renjiao-algorithmic-daodejing/
 规范层的条款若被引用进产品文档、评审清单或内部规范，欢迎在 Issue 里说明使用场景。
 
 规范文本不构成法律意见。真正的合规判断请以现行法律法规与监管要求为准。
+
+### 为什么 GitHub 侧栏不显示许可名
+
+仓库页右侧栏的许可徽章来自 GitHub 的许可识别程序，而它能比对的许可清单（来自 [choosealicense.com](https://choosealicense.com/)）里，Creative Commons 只有三个：
+
+- `CC0-1.0`（Creative Commons Zero）
+- `CC-BY-4.0`（署名）
+- `CC-BY-SA-4.0`（署名—相同方式共享）
+
+**没有任何 NC（非商业）变体。** 原因是该清单只收允许商用的开放许可。所以本仓库改用 CC BY-NC-SA 4.0 之后，GitHub 只能给出 `Other`，无法显示具体许可名——换任何文本都改不了。
+
+许可本身完全有效，只是徽章显示不出来。要确认许可，请看本页顶部的许可行与 [`LICENSE`](LICENSE) 全文。
 
 ---
 
