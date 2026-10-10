@@ -4,7 +4,7 @@ subtitle: "The Human Teaching (Renjiao)"
 register: "scriptural"
 based_on: "1.1.0 / scripture/ (12 volumes)"
 source: "../../archive/renjiao-daodejing-manuscript.txt"
-license: "CC BY-SA 4.0"
+license: "CC BY-NC-SA 4.0"
 ---
 
 # The Algorithmic Scripture of the Way

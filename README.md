@@ -9,7 +9,7 @@
 - 全经正文 **8830 字**（不含空白），分 12 篇
 - 由**表述层**（`scripture/`，经文体）与**规范层**（`norms/`，可判定条款）两层构成
 - 已有**英译本**：[`translations/en/scripture-en.md`](translations/en/scripture-en.md) 与 [`translations/en/xixue-canyong-en.md`](translations/en/xixue-canyong-en.md)
-- 许可：**CC BY-SA 4.0**，可转载、可改编，需署名并以相同方式共享
+- 许可：**CC BY-NC-SA 4.0**，可转载、可改编，需署名、非商业性使用并以相同方式共享
 
 ---
 
@@ -83,7 +83,7 @@
 renjiao-algorithmic-daodejing/
 ├── README.md                 本文件
 ├── INDEX.md                  自动生成的目录与字数统计
-├── LICENSE                   CC BY-SA 4.0
+├── LICENSE                   CC BY-NC-SA 4.0
 ├── CITATION.cff              引用元数据
 ├── CONTRIBUTING.md           贡献指引
 ├── scripture/                表述层：经文（12 篇，一字不改）
@@ -123,10 +123,13 @@ renjiao-algorithmic-daodejing/
 
 ## 使用与署名
 
-本经以 **CC BY-SA 4.0** 发布，你可以自由复制、转载、改编，包括商用，条件是：
+本经以 **CC BY-NC-SA 4.0**（署名—非商业性使用—相同方式共享）发布。你可以自由复制、转载、改编，条件是：
 
 1. **署名**：注明来源与作者，建议链接回本仓库
-2. **相同方式共享**：基于本经的改编作品需以同样的许可发布
+2. **非商业**：不得将本经或其改编作品用于商业目的（"非商业"指非以商业优势或金钱报酬为主要目的）
+3. **相同方式共享**：基于本经的改编作品需以同样的许可发布
+
+**想要商用怎么办**：本仓库不发放商业例外授权。若确需商业使用，请开 Issue 说明用途，由作者另行决定。
 
 规范层的条款若被引用进产品文档、评审清单或内部规范，欢迎在 Issue 里说明使用场景。
 
@@ -159,5 +162,6 @@ renjiao-algorithmic-daodejing/
 | 0.1.0 | 2026-09-14 | 原始单文件全本（存档于 `archive/`） |
 | 1.0.0 | 2026-10-10 | 结构重构：分卷、加元数据、拆分表述层与规范层、补术语表与对照表 |
 | 1.1.0 | 2026-10-10 | 全本追加"全经终"附识；《西学参用篇》定稿入库；英译两篇成稿 |
+| 1.1.1 | 2026-10-10 | 许可收紧：CC BY-SA 4.0 → CC BY-NC-SA 4.0（禁商业使用） |
 
 变更记录见 [appendix/lineage.md](appendix/lineage.md)。

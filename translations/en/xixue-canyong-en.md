@@ -4,7 +4,7 @@ register: "scriptural"
 status: "final text"
 based_on: "西学参用篇 定稿"
 source: "算法道经·西学参用篇（定稿）"
-license: "CC BY-SA 4.0"
+license: "CC BY-NC-SA 4.0"
 ---
 
 # The Algorithmic Scripture of the Way · On the Use of Western Learning
