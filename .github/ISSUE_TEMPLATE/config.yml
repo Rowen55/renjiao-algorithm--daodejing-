@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: 读一遍贡献指引
+    url: https://github.com/Rowen55/renjiao-algorithm--daodejing-/blob/main/CONTRIBUTING.md
+    about: 三条底线、可以做什么、提交流程与格式约定
+  - name: 看一下规范层现状
+    url: https://github.com/Rowen55/renjiao-algorithm--daodejing-/blob/main/norms/precepts.yaml
+    about: 十一善戒的定义、判定标准与正反例

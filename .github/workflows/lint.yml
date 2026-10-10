@@ -1,0 +1,38 @@
+name: lint
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: 校验分卷与原始文本一致
+        run: python scripts/split_scripture.py --check
+
+      - name: 校验索引为最新
+        run: python scripts/build_index.py --check
+
+      - name: 校验善戒结构
+        run: python scripts/validate_precepts.py
+
+      - name: 检查相对链接
+        run: python scripts/check_links.py
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Markdown 格式检查
+        run: npx --yes markdownlint-cli2 "**/*.md" "#node_modules"
