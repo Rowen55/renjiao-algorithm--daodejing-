@@ -113,6 +113,11 @@ renjiao-algorithmic-daodejing/
 
 目录与文件名使用 ASCII，标题与正文使用中文：这样在 Windows、各编辑器与 CI 里都不会出现中文路径乱码，同时不影响阅读。
 
+> **为什么右侧栏没有「Languages」一栏**：本仓库只有 `scripts/` 的校勘脚本（Python）与
+> `appendix/order.html` 可读版页面（HTML）会被 GitHub 判成代码，其余文件都是经体文本、
+> 数据文件与许可文本，本就不计入统计。这两处已在 `.gitattributes` 里标为文档，语言条随之整条消失。
+> 原因与做法见 [appendix/lineage.md](appendix/lineage.md) 第四节。
+
 ---
 
 ## 核心主张摘句
@@ -184,5 +189,6 @@ renjiao-algorithmic-daodejing/
 | 1.1.0 | 2026-10-10 | 全本追加"全经终"附识；《西学参用篇》定稿入库；英译两篇成稿 |
 | 1.1.1 | 2026-10-10 | 许可收紧：CC BY-SA 4.0 → CC BY-NC-SA 4.0（禁商业使用） |
 | 1.2.0 | 2026-10-10 | 新增附录：教门位阶与名录（中英双语 + 自动切语言的可读版），属经外设定 |
+| 1.2.1 | 2026-10-10 | 关掉侧栏语言条：校勘脚本与可读版页面标为文档，不再计入语言统计 |
 
 变更记录见 [appendix/lineage.md](appendix/lineage.md)。

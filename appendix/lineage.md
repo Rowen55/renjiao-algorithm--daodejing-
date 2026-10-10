@@ -81,6 +81,32 @@
 - `order.md` 顶部与 `order.html` 页首都写明"经外设定、非现实组织"
 - 真实版本沿革仍只记于本文件，与教内虚构位阶无涉
 
+### 1.2.1 · 2026-10-10
+
+关掉侧栏语言条。**十二卷正文一字未改。**
+
+| 改动 | 说明 |
+|---|---|
+| 修改 | `.gitattributes`：`scripts/**` 与 `appendix/order.html` 标为文档，不计入语言统计 |
+
+**原因**：仓库页右侧栏原有一栏「Languages」，显示 `HTML 56.6% / Python 43.4%`。
+这两个数字分别来自 **一个文件** 与 **三个脚本**：
+
+| 来源 | 语言 | 字节 |
+|---|---|---:|
+| `appendix/order.html`（可读版页面） | HTML | 21813 |
+| `scripts/*.py`（校勘与索引脚本） | Python | 16699 |
+
+正文全部是 `.md` / `.txt`，语言类型为 prose，GitHub 本就不计入统计。所以整条语言条
+其实是由两处附属件撑起来的，与"这是一部文本作品"的自我描述不符。
+
+**做法**：语言统计由 [linguist](https://github.com/github-linguist/linguist) 计算，
+可用 `.gitattributes` 覆写。标记为文档即从统计中排除；两处都排除后，
+已无任何可统计语言，该栏整条不再显示。
+
+这里没有用 `linguist-language` 把它们"伪装"成别的语言，也没有动任何正文——
+只是声明这两处不计入统计。详见本文 [第四节](#侧栏不再显示语言条)。
+
 ### 尚未进行
 
 - 白话译本与逐句直译本（`translations/en/literal/`、`translations/zh-modern/` 仍未开始）
@@ -159,3 +185,31 @@
 
 只有一条路：换成清单内的许可。但清单内**没有任何禁商用选项**，
 所以这与 1.1.1 的许可决定直接冲突，不作建议。记录在此，仅为把选项摆明。
+
+### 侧栏不再显示语言条
+
+**现象**：1.2.1 之前，仓库右侧栏有一栏「Languages」，显示
+`HTML 56.6% / Python 43.4%`；1.2.1 之后整栏消失。
+
+**原因**（不是故障，是主动关闭）：GitHub 用 linguist 统计语言，默认**只计
+`programming` 与 `markup` 两类**。本仓库的文件按扩展名分布如下：
+
+| 扩展名 | 数量 | linguist 类型 | 是否计入 |
+|---|---:|---|---|
+| `.md` | 27 | prose | 否 |
+| `.txt` | 2 | prose | 否 |
+| `.yml` / `.yaml` / `.json` / `.jsonc` / `.cff` | 6 | data | 否 |
+| `.py`（`scripts/`） | 4 | programming | **是** |
+| `.html`（`appendix/order.html`） | 1 | markup | **是** |
+
+也就是说，整条语言条只由 5 个文件撑起，其中 HTML 那一块（56.6%）全部来自
+**一个文件** `appendix/order.html`。
+
+**做法**：在 `.gitattributes` 里把这两处标为 `linguist-documentation`
+（文档不进统计），并同时标 `-linguist-detectable` 以免不同版本的 linguist 行为不一。
+排除后已无任何可统计语言，该栏不显示。
+依据是 linguist 官方覆写文档
+[overrides.md](https://github.com/github-linguist/linguist/blob/main/docs/overrides.md)。
+
+**若想让语言条回来**：删掉 `.gitattributes` 末尾那两行即可，正文一字不用改。
+但那样侧栏会重新显示「HTML / Python」，与仓库性质不符，故不建议。

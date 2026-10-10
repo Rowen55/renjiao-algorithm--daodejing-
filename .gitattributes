@@ -9,3 +9,14 @@
 *.json text eol=lf
 *.cff  text eol=lf
 LICENSE text eol=lf
+
+# 语言统计：本仓库不是代码仓库。
+# 正文是文言经体（.md / .txt，语言类型为 prose），GitHub 本就不计入统计。
+# 唯二会被判成代码的是下面两处附属件，它们不该占据侧栏的「Languages」一栏：
+#   - scripts/**        校勘与索引脚本（Python, programming）
+#   - appendix/order.html  教门位阶的可读版页面（HTML, markup）
+# 标为文档即从语言统计中排除；两者都被排除后，该栏整条不再显示。
+# 两个属性都指向「不进统计」，一并写上以免不同版本的 linguist 行为不一。
+# 依据：https://github.com/github-linguist/linguist/blob/main/docs/overrides.md
+scripts/**           linguist-documentation -linguist-detectable
+appendix/order.html  linguist-documentation -linguist-detectable
